@@ -1,0 +1,30 @@
+{% extends 'cssApp/base.html' %}
+
+{% block color %}
+<style>
+    #background{
+        background: indianred;
+    }
+</style>
+{% endblock color %}
+
+{% block rightside %}
+<h1>Welcome!</h1>
+<article>My name is Melaat jayah and this is my Get to know me in three slides preview. I tend to like to create everything about myself as
+    a software developer haha!. I was a restaurant manager for 5 years at Redkoi Japanese cuisine. red Koi is not only where i worked but it
+    is also my favorite restaurant ever. I consistently ate there and even on my days off i would grab a bite. I have probably gained
+    50 pounds working there and the number is still rising. Now im on my journey to become a software developer and it has
+    been nothing but an amazing experience so far. We have great instructors and they know their stuff! </h2>
+</article>
+{% endblock rightside %}
+
+
+{% block leftside %}
+<h2>Page</h2>
+<h1>Two</h1>
+{% endblock leftside %}
+
+{% block buttons %}
+<a href="{% url 'page1' %}"><button>Previous</button></a>
+<a href="{% url 'page3' %}"><button>Next</button></a>
+{% endblock buttons %}

@@ -1,0 +1,40 @@
+body{
+    border: 3px solid gray;
+    /*padding: ;*/
+
+    margin: 5% 10%;
+    padding: 5px;
+}
+
+/* my grid with 3 columns and two rows with a light gray background */
+.gridcontainer{
+    background-color: lightgray;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 1fr 1fr;*/
+}
+
+/* left side with border to the right to show the line and text slighn right */
+.leftside{
+    border-right: 2px solid gray;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: right;
+
+}
+
+
+/* right side that takes to columns and centered */
+.rightside{
+    grid-column: 2/4;
+    grid-row: 1;
+    text-align: center;
+
+}
+
+.button{
+    grid-column: 2/3;
+    grid-row: 2;
+    text-align: center;
+    padding-bottom: 30%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'cssApp/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'cssApp/css/base.css' %}">
+    <script src="{% static 'cssApp/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'cssApp/js/bootstrap.js' %}"></script>
+</head>
+
+<body>
+<!-- block to change color -->
+{% block color %}
+{% endblock color %}
+
+<!-- i put an id with the grid so i can call the specific id for my style tag -->
+<div class="gridcontainer" id="background">
+<div class="rightside">
+{% block rightside %}
+<h2>information will be placed here</h2>
+{% endblock rightside %}
+</div>
+ <!-- my b;ock for the left side information -->
+<div class="leftside">
+{% block leftside %}
+<h1>Page Number Will be Here</h1>
+{% endblock leftside %}
+</div>
+<!-- my block for the buttons -->
+<div class="button">
+{% block buttons %}
+<h1>Buttons will be placed here</h1>
+{% endblock buttons %}
+</div>
+</div>
+</body>
+</html>
